@@ -2,99 +2,97 @@
   display: flex;
 }
 .side-bar {
+  background-color: #253141;
   width: 300px;
   height: 100vh;
 }
-.chat {
-  width: calc(100vw - 300px);
-}
 
-.side_header {
+.side-bar-header {
   height: 100px;
-  background-color: #253141;
   padding: 0 20px;
+  background-color: #253141;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.user-name a {
+.header-name a{
   font-size: 16px;
-  color: #fafafa;
+  color: #FAFAFA;
   text-decoration: none;
 }
 
-.create-chat a {
+.create-room a {
   font-size: 10px;
-  color: deepskyblue;
   border: 1px solid lightblue;
   padding: 14px;
+  color: deepskyblue;
   text-decoration: none;
 }
 
-
-.side_main {
-  background-color: #2f3e51;
+.rooms {
+  background-color: #2F3E51;
   height: calc(100vh - 100px);
   padding: 0 20px;
   overflow: scroll;
 }
 
-.side_room a {
-  display: block;
-  padding-top: 20px;
-  padding-bottom: 40px;
+.room {
+  padding: 20px 0 40px;
+}
+
+.room-name a {
   text-decoration: none;
   color: white;
 }
 
-.chat_header {
+.chat {
+  background-color:#ffffff;
+  width: calc(100vw - 300px);
+}
+
+.chat-header {
   height: 100px;
-  background-color: #FFFFFF;
   padding: 0 40px;
   display: flex;
   justify-content: space-between;
 }
 
-.room_name {
+.header-title {
+  color: #333;
+  font-size: 24px;
   margin-top: 36px;
 }
 
-.room_name a {
-  font-size: 24px;
-  color: #333333;
-  text-decoration: none;
-}
-
-.end_chat {
+.header-button {
   margin-top: 40px;
 }
 
-.end_chat a {
-  padding: 20px;
-  color: darkred;
-  border: 1px solid darkred;
+.header-button a {
   text-decoration: none;
+  border: 1px solid darkred;
+  color: darkred;
+  padding: 20px;
 }
 
-.chat_main {
+.messages {
+  background-color: #FAFAFA;
   height: calc(100vh - 100px - 90px);
-  background-color: #fafafa;
   padding: 46px 40px 0;
   overflow: scroll;
 }
 
 .message {
-  margin: 10px 0 0 0 ;
+  margin: 10px 0 0 0;
 }
 
-.upper_message {
+.upper-message{
   display: flex;
 }
 
-.message_user {
-  font-size: 16px;
+.message-user {
   color: #434a54;
+  font-size: 16px;
 }
 
 .message-date {
@@ -103,45 +101,47 @@
   padding-left: 10px;
 }
 
-.lower_message {
+.lower-message {
   margin-top: 10px;
 }
 
-.message_content {
+.message-content {
   color: #434a54;
   font-size: 14px;
   margin-bottom: 40px;
 }
 
-.chat_fooder {
-  height: 90px;
+
+.form {
   background-color: #DDDDDD;
+  height: 90px;
   padding: 20px 40px;
   display: flex;
 }
 
-.form_input {
+.form-input {
   background-color: white;
   width: 100%;
   display: flex;
 }
 
-.form_message {
-  width: 100%;
+.form-message {
   border: none;
   height: 50px;
+  width: 100%;
   padding-left: 10px;
 }
 
-.form_submit {
-  height: 50px;
-  margin-left: 15px;
+.form-submit {
   background-color: #38AEF0;
   border: none;
   color: white;
   font-size: 16px;
+  height: 50px;
+  margin-left: 15px;
   padding: 0 20px;
 }
+
 
 .form-image {
   font-size: 12px;
